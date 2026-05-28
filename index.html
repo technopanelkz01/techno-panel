@@ -1,39 +1,30 @@
-```html
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>TECHNO PANEL | Сэндвич-панели и строительство под ключ</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
-header{
-  background:
-  linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
-  url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-
-  height:100vh;
-
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
-  text-align:center;
-  color:white;
-  padding:20px;
+html{
+    scroll-behavior:smooth;
+}
 
 body{
-    font-family:Arial,sans-serif;
-    background:#f5f7fa;
+    font-family:'Montserrat',sans-serif;
+    background:#f4f7fb;
     color:#222;
     overflow-x:hidden;
 }
@@ -43,36 +34,40 @@ body{
 header{
     width:100%;
     height:100vh;
+
     background:
-    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
-    url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2000&auto=format&fit=crop');
+    linear-gradient(rgba(5,15,30,0.75), rgba(5,15,30,0.75)),
+    url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1800&auto=format&fit=crop');
+
     background-size:cover;
     background-position:center;
+
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
     text-align:center;
+
     padding:20px;
 }
 
 .hero{
-    max-width:1000px;
+    max-width:1100px;
     animation:fadeIn 1.5s ease;
 }
 
 .hero h1{
-    color:#fff;
-    font-size:82px;
-    margin-bottom:20px;
-    letter-spacing:4px;
-    font-weight:700;
+    font-size:95px;
+    color:white;
+    font-weight:800;
+    margin-bottom:25px;
+    letter-spacing:3px;
 }
 
 .hero p{
-    color:#ddd;
-    font-size:28px;
-    line-height:1.5;
-    margin-bottom:40px;
+    color:white;
+    font-size:30px;
+    line-height:1.7;
+    margin-bottom:45px;
 }
 
 .hero-buttons{
@@ -83,48 +78,55 @@ header{
 }
 
 .btn{
-    display:inline-block;
-    padding:18px 38px;
+    padding:18px 40px;
     border-radius:12px;
     text-decoration:none;
+    color:white;
     font-size:18px;
-    transition:.3s;
-    font-weight:bold;
+    font-weight:600;
+    transition:0.3s;
 }
 
 .btn-green{
     background:#25D366;
-    color:#fff;
 }
 
 .btn-green:hover{
-    background:#18b956;
+    background:#1ebe5b;
     transform:translateY(-3px);
 }
 
 .btn-dark{
-    background:#111827;
-    color:#fff;
+    background:#0d1b2a;
 }
 
 .btn-dark:hover{
-    background:#1f2937;
+    background:#1b263b;
     transform:translateY(-3px);
 }
 
-/* SECTIONS */
+/* SECTION */
 
 section{
     max-width:1300px;
     margin:auto;
-    padding:90px 20px;
+    padding:100px 20px;
 }
 
 .section-title{
-    font-size:48px;
-    margin-bottom:50px;
     text-align:center;
-    color:#0f172a;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:48px;
+    color:#0d1b2a;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    color:#666;
+    font-size:20px;
 }
 
 /* ABOUT */
@@ -132,43 +134,49 @@ section{
 .about{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:40px;
+    gap:45px;
     align-items:center;
 }
 
 .about img{
     width:100%;
     border-radius:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
 .about-text{
-    background:#fff;
-    padding:40px;
+    background:white;
+    padding:50px;
     border-radius:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.about-text h3{
+    font-size:40px;
+    margin-bottom:25px;
+    color:#0d1b2a;
 }
 
 .about-text p{
-    font-size:19px;
-    line-height:1.9;
+    font-size:18px;
+    line-height:1.8;
     color:#444;
 }
 
 /* SERVICES */
 
-.services{
+.services-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+    gap:30px;
 }
 
 .service-card{
-    background:#fff;
-    border-radius:22px;
+    background:white;
+    border-radius:25px;
     overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.4s;
+    transition:0.4s;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
 }
 
 .service-card:hover{
@@ -177,7 +185,7 @@ section{
 
 .service-card img{
     width:100%;
-    height:240px;
+    height:260px;
     object-fit:cover;
 }
 
@@ -186,9 +194,9 @@ section{
 }
 
 .service-content h3{
+    font-size:28px;
     margin-bottom:15px;
-    font-size:24px;
-    color:#0f172a;
+    color:#0d1b2a;
 }
 
 .service-content p{
@@ -199,98 +207,120 @@ section{
 /* ADVANTAGES */
 
 .advantages{
+    background:#0d1b2a;
+    border-radius:30px;
+    padding:70px 40px;
+    color:white;
+}
+
+.advantages-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+    gap:30px;
 }
 
-.adv-card{
-    background:#0f172a;
-    color:white;
-    padding:35px;
-    border-radius:22px;
+.adv{
     text-align:center;
-    transition:.3s;
 }
 
-.adv-card:hover{
-    transform:scale(1.03);
-}
-
-.adv-card h3{
+.adv h3{
+    font-size:28px;
     margin-bottom:15px;
-    font-size:26px;
+}
+
+.adv p{
+    color:#d8d8d8;
+    line-height:1.7;
 }
 
 /* CONTACT */
 
-.contact{
-    background:#fff;
-    border-radius:25px;
+.contact-box{
+    background:white;
+    border-radius:30px;
     padding:50px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
 .contact-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:40px;
+    gap:50px;
+}
+
+.contact-info h3{
+    font-size:36px;
+    margin-bottom:30px;
+    color:#0d1b2a;
 }
 
 .contact-info p{
     font-size:20px;
     margin-bottom:20px;
+    color:#444;
 }
 
 .contact-info a{
-    color:#2563eb;
+    color:#25D366;
     text-decoration:none;
+    font-weight:600;
 }
 
 form{
     display:flex;
     flex-direction:column;
-    gap:18px;
+    gap:20px;
 }
 
 input,
 textarea{
     padding:18px;
     border-radius:12px;
-    border:1px solid #d1d5db;
+    border:1px solid #ccc;
     font-size:16px;
+    font-family:'Montserrat',sans-serif;
 }
 
 button{
-    background:#0f172a;
-    color:white;
-    border:none;
     padding:18px;
+    border:none;
     border-radius:12px;
-    cursor:pointer;
+    background:#0d1b2a;
+    color:white;
     font-size:18px;
-    transition:.3s;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:600;
 }
 
 button:hover{
-    background:#1e293b;
+    background:#1b263b;
 }
 
 iframe{
     width:100%;
+    height:350px;
     border:none;
     border-radius:20px;
-    margin-top:25px;
+    margin-top:40px;
 }
 
 /* FOOTER */
 
 footer{
-    background:#0f172a;
+    background:#08111f;
     color:white;
     text-align:center;
-    padding:35px;
-    margin-top:50px;
+    padding:45px 20px;
+    margin-top:80px;
+}
+
+footer h2{
+    margin-bottom:10px;
+}
+
+footer p{
+    opacity:0.8;
 }
 
 /* WHATSAPP */
@@ -299,19 +329,26 @@ footer{
     position:fixed;
     right:25px;
     bottom:25px;
-    width:70px;
-    height:70px;
+
+    width:72px;
+    height:72px;
+
     background:#25D366;
     border-radius:50%;
-    color:white;
+
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
+
+    color:white;
+    font-size:34px;
     text-decoration:none;
-    font-size:32px;
-    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+
     z-index:999;
-    transition:.3s;
+
+    transition:0.3s;
 }
 
 .whatsapp:hover{
@@ -336,11 +373,11 @@ footer{
 @media(max-width:900px){
 
     .hero h1{
-        font-size:48px;
+        font-size:52px;
     }
 
     .hero p{
-        font-size:20px;
+        font-size:22px;
     }
 
     .about{
@@ -351,8 +388,8 @@ footer{
         grid-template-columns:1fr;
     }
 
-    .section-title{
-        font-size:34px;
+    .section-title h2{
+        font-size:36px;
     }
 
 }
@@ -369,21 +406,25 @@ footer{
 <h1>TECHNO PANEL</h1>
 
 <p>
-Поставка, монтаж сэндвич-панелей и фасадных кассет.<br>
+Производство, поставка и монтаж сэндвич-панелей и фасадных кассет.<br>
 Строительство складов, ангаров и промышленных объектов под ключ.
 </p>
 
 <div class="hero-buttons">
 
-<a class="btn btn-green"
-href="https://wa.me/77056512203"
-target="_blank">
+<a href="https://wa.me/77056512203"
+target="_blank"
+class="btn btn-green">
+
 WhatsApp
+
 </a>
 
-<a class="btn btn-dark"
-href="#contact">
+<a href="#contacts"
+class="btn btn-dark">
+
 Получить консультацию
+
 </a>
 
 </div>
@@ -394,32 +435,35 @@ href="#contact">
 
 <section>
 
-<h2 class="section-title">О компании</h2>
+<div class="section-title">
+
+<h2>О компании</h2>
+
+<p>
+Современные решения для промышленного строительства
+</p>
+
+</div>
 
 <div class="about">
 
-<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1400&auto=format&fit=crop">
 
 <div class="about-text">
 
+<h3>TECHNO PANEL</h3>
+
 <p>
 ТОО "TECHNO PANEL ТОРГОВЫЙ ДОМ" —
-современная компания по поставке,
-монтажу и реализации сэндвич-панелей,
-фасадных облицовочных кассет и
-строительных решений для коммерческих,
-промышленных и складских объектов.
+производство, поставка и профессиональный монтаж
+сэндвич-панелей, фасадных кассет и облицовочных панелей.
 </p>
 
 <br>
 
 <p>
-Мы также выполняем полный комплекс
-строительных работ под ключ:
-строительство складов, ангаров,
-производственных помещений,
-логистических комплексов и
-промышленных зданий.
+Мы также выполняем строительство складов,
+ангаров, цехов и промышленных зданий под ключ.
 </p>
 
 </div>
@@ -430,22 +474,29 @@ href="#contact">
 
 <section>
 
-<h2 class="section-title">Наши услуги</h2>
+<div class="section-title">
 
-<div class="services">
+<h2>Наши услуги</h2>
+
+<p>
+Полный комплекс решений для вашего объекта
+</p>
+
+</div>
+
+<div class="services-grid">
 
 <div class="service-card">
 
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1200&auto=format&fit=crop">
 
 <div class="service-content">
 
 <h3>Сэндвич-панели</h3>
 
 <p>
-Поставка стеновых и кровельных
-сэндвич-панелей для промышленных,
-коммерческих и складских объектов.
+Стеновые и кровельные панели
+для складов, заводов и коммерческих объектов.
 </p>
 
 </div>
@@ -454,7 +505,7 @@ href="#contact">
 
 <div class="service-card">
 
-<img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1200&auto=format&fit=crop">
 
 <div class="service-content">
 
@@ -462,26 +513,7 @@ href="#contact">
 
 <p>
 Современные фасадные решения
-для облицовки коммерческих и
-промышленных зданий.
-</p>
-
-</div>
-
-</div>
-
-<div class="service-card">
-
-<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop">
-
-<div class="service-content">
-
-<h3>Монтаж</h3>
-
-<p>
-Профессиональный монтаж
-сэндвич-панелей и фасадных
-облицовочных систем.
+для промышленных и административных зданий.
 </p>
 
 </div>
@@ -494,12 +526,28 @@ href="#contact">
 
 <div class="service-content">
 
+<h3>Монтаж</h3>
+
+<p>
+Профессиональный монтаж
+сэндвич-панелей и фасадных систем.
+</p>
+
+</div>
+
+</div>
+
+<div class="service-card">
+
+<img src="https://images.unsplash.com/photo-1541976590-713941681591?q=80&w=1200&auto=format&fit=crop">
+
+<div class="service-content">
+
 <h3>Строительство под ключ</h3>
 
 <p>
-Строительство складов,
-ангаров и промышленных
-объектов под ключ.
+Склады, ангары и промышленные здания
+с полным циклом работ.
 </p>
 
 </div>
@@ -512,72 +560,118 @@ href="#contact">
 
 <section>
 
-<h2 class="section-title">Почему выбирают нас</h2>
-
 <div class="advantages">
 
-<div class="adv-card">
+<div class="section-title">
+
+<h2 style="color:white;">
+Почему выбирают нас
+</h2>
+
+<p style="color:#d5d5d5;">
+Надежность, скорость и качество
+</p>
+
+</div>
+
+<div class="advantages-grid">
+
+<div class="adv">
+
 <h3>Качество</h3>
-<p>Надежные материалы и современные технологии.</p>
+
+<p>
+Современные технологии
+и надежные материалы.
+</p>
+
 </div>
 
-<div class="adv-card">
+<div class="adv">
+
+<h3>Скорость</h3>
+
+<p>
+Оперативное производство,
+доставка и монтаж.
+</p>
+
+</div>
+
+<div class="adv">
+
 <h3>Опыт</h3>
-<p>Большой опыт работы с промышленными объектами.</p>
+
+<p>
+Опыт работы
+с промышленными объектами.
+</p>
+
 </div>
 
-<div class="adv-card">
-<h3>Сроки</h3>
-<p>Соблюдение сроков производства и монтажа.</p>
-</div>
+<div class="adv">
 
-<div class="adv-card">
 <h3>Под ключ</h3>
-<p>Полный цикл работ от поставки до строительства.</p>
+
+<p>
+Полный цикл строительства —
+от проекта до сдачи объекта.
+</p>
+
+</div>
+
 </div>
 
 </div>
 
 </section>
 
-<section id="contact">
+<section id="contacts">
 
-<h2 class="section-title">Контакты</h2>
+<div class="section-title">
 
-<div class="contact">
+<h2>Контакты</h2>
+
+<p>
+Свяжитесь с нами для консультации
+</p>
+
+</div>
+
+<div class="contact-box">
 
 <div class="contact-grid">
 
 <div class="contact-info">
 
+<h3>Контактная информация</h3>
+
 <p>
-<strong>Телефон:</strong><br>
+📞 <strong>Телефон:</strong><br>
 +7 (705) 651-22-03
 </p>
 
 <p>
-<strong>Email:</strong><br>
+✉ <strong>Email:</strong><br>
 
 <a href="mailto:technopanel.kz01@gmail.com">
 technopanel.kz01@gmail.com
 </a>
+
 </p>
 
 <p>
-<strong>WhatsApp:</strong><br>
+💬 <strong>WhatsApp:</strong><br>
 +7 (705) 651-22-03
 </p>
 
-<a class="btn btn-green"
-href="https://wa.me/77056512203"
-target="_blank">
-Написать в WhatsApp
-</a>
+<a href="https://wa.me/77056512203"
+target="_blank"
+class="btn btn-green">
 
-<iframe
-src="https://maps.google.com/maps?q=almaty&t=&z=13&ie=UTF8&iwloc=&output=embed"
-height="320">
-</iframe>
+Написать в WhatsApp
+
+</a>
 
 </div>
 
@@ -589,11 +683,12 @@ height="320">
 
 <input type="tel" placeholder="Ваш телефон">
 
-<textarea rows="6"
-placeholder="Опишите ваш проект"></textarea>
+<textarea rows="6" placeholder="Опишите ваш проект"></textarea>
 
 <button type="submit">
+
 Отправить заявку
+
 </button>
 
 </form>
@@ -602,23 +697,31 @@ placeholder="Опишите ваш проект"></textarea>
 
 </div>
 
+<iframe
+src="https://maps.google.com/maps?q=Almaty&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
 </div>
 
 </section>
 
 <footer>
 
-© 2026 TECHNO PANEL<br>
-Сэндвич-панели • Монтаж • Строительство под ключ
+<h2>TECHNO PANEL</h2>
+
+<p>
+© 2026 TECHNO PANEL ТОРГОВЫЙ ДОМ
+</p>
 
 </footer>
 
 <a class="whatsapp"
 href="https://wa.me/77056512203"
 target="_blank">
+
 ☎
+
 </a>
 
 </body>
 </html>
-```
