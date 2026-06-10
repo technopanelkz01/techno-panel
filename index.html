@@ -1,727 +1,293 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head><meta name="description" content="TECHNO PANEL — производство, поставка и монтаж сэндвич-панелей, фасадных панелей, строительство складов, ангаров и промышленных зданий под ключ в Казахстане.">
-<meta name="keywords" content="сэндвич панели, фасадные панели, монтаж сэндвич панелей, строительство ангаров, строительство складов, промышленные здания, techno panel">
-<meta charset="UTF-8"><meta name="google-site-verification" content="FUg9HixWks3t_hyBIzMiRDaviGJqat8A6WxXNV_wfro" />
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Сэндвич-панели в Казахстане | Монтаж сэндвич-панелей и строительство складов, ангаров | TECHNO PANEL</title>
+<title>Сэндвич-панели в Казахстане | Производство, поставка и монтаж | TECHNO PANEL</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="google-site-verification" content="FUg9HixWks3t_hyBIzMiRDaviGJqat8A6WxXNV_wfro" />
+
+<meta name="description" content="TECHNO PANEL — производство, поставка и монтаж сэндвич-панелей, фасадных панелей и фасадных кассет в Алматы, Астане и по Казахстану. Строительство складов, ангаров, СТО, холодильных камер и промышленных зданий под ключ.">
+
+<meta name="keywords" content="сэндвич панели Казахстан, сэндвич панели Алматы, купить сэндвич панели, производство сэндвич панелей, поставка сэндвич панелей, монтаж сэндвич панелей, фасадные панели, фасадные кассеты, монтаж фасадных кассет, строительство ангаров, строительство складов, холодильные камеры, промышленные здания">
+
+<meta name="author" content="TECHNO PANEL">
 
 <style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#f4f7fb;color:#1f2937}
+a{text-decoration:none;color:inherit}
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+.header{
+position:fixed;top:0;left:0;width:100%;z-index:1000;
+background:rgba(8,17,31,.92);backdrop-filter:blur(10px);
+padding:18px 7%;display:flex;justify-content:space-between;align-items:center
 }
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:'Montserrat',sans-serif;
-    background:#f4f7fb;
-    color:#222;
-    overflow-x:hidden;
-}
-
-/* HEADER */
-
-header{
-    width:100%;
-    height:100vh;
-
-    background:
-    linear-gradient(rgba(5,15,30,0.75), rgba(5,15,30,0.75)),
-    url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1800&auto=format&fit=crop');
-
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-
-    padding:20px;
-}
+.logo{font-size:28px;font-weight:900;color:white;letter-spacing:2px}
+.logo span{color:#ff6500}
+.nav a{color:white;margin-left:24px;font-weight:700}
+.nav a:hover{color:#ff6500}
 
 .hero{
-    max-width:1100px;
-    animation:fadeIn 1.5s ease;
+min-height:100vh;
+background:linear-gradient(rgba(5,15,30,.78),rgba(5,15,30,.78)),
+url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1800&auto=format&fit=crop") center/cover;
+display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 7% 70px
 }
+.hero-box{max-width:1150px}
+.badge{display:inline-block;background:#ff6500;color:white;padding:12px 22px;border-radius:30px;font-weight:800;margin-bottom:25px}
+.hero h1{font-size:72px;color:white;font-weight:900;line-height:1.1;margin-bottom:25px;text-transform:uppercase}
+.hero h1 span{color:#ff6500}
+.hero p{font-size:27px;line-height:1.55;color:#eef2ff;margin-bottom:35px}
+.buttons{display:flex;justify-content:center;gap:18px;flex-wrap:wrap}
+.btn{display:inline-block;padding:18px 34px;border-radius:10px;font-size:18px;font-weight:800;transition:.3s}
+.btn-green{background:#25d366;color:white}
+.btn-green:hover{background:#1ebe5b;transform:translateY(-3px)}
+.btn-dark{background:#0d1b2a;color:white;border:1px solid #334155}
+.btn-dark:hover{background:#1b263b;transform:translateY(-3px)}
+.btn-orange{background:#ff6500;color:white}
 
-.hero h1{
-    font-size:95px;
-    color:white;
-    font-weight:800;
-    margin-bottom:25px;
-    letter-spacing:3px;
+section{max-width:1300px;margin:auto;padding:90px 7%}
+.section-title{text-align:center;margin-bottom:55px}
+.section-title h2{font-size:42px;color:#0d1b2a;margin-bottom:18px}
+.section-title p{font-size:19px;color:#4b5563;line-height:1.7;max-width:1050px;margin:0 auto 14px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.card{
+background:white;border-radius:22px;padding:30px;
+box-shadow:0 12px 35px rgba(0,0,0,.08);
+border:1px solid #e5e7eb
 }
+.card h3{font-size:25px;color:#0d1b2a;margin-bottom:15px}
+.card p{font-size:17px;color:#4b5563;line-height:1.7}
 
-.hero p{
-    color:white;
-    font-size:30px;
-    line-height:1.7;
-    margin-bottom:45px;
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about img{width:100%;border-radius:25px;box-shadow:0 15px 40px rgba(0,0,0,.18)}
+.about-text{background:white;padding:45px;border-radius:25px;box-shadow:0 12px 35px rgba(0,0,0,.08)}
+.about-text h2{font-size:40px;color:#0d1b2a;margin-bottom:20px}
+.about-text p{font-size:18px;line-height:1.8;color:#4b5563;margin-bottom:15px}
+
+.dark-section{background:#0d1b2a;color:white;max-width:none}
+.dark-section .section-title h2{color:white}
+.dark-section .section-title p{color:#cbd5e1}
+.dark-section .card{background:#111827;border:1px solid #334155}
+.dark-section .card h3{color:#ff6500}
+.dark-section .card p{color:#cbd5e1}
+
+.contact-box{background:white;border-radius:28px;padding:45px;box-shadow:0 12px 35px rgba(0,0,0,.08)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.contact-info h3{font-size:34px;color:#0d1b2a;margin-bottom:25px}
+.contact-info p{font-size:20px;color:#374151;margin-bottom:18px}
+.contact-info a{color:#25d366;font-weight:800}
+
+.cta{
+max-width:none;text-align:center;
+background:linear-gradient(90deg,#ff6500,#dc2626);
+color:white;padding:80px 7%
 }
+.cta h2{font-size:42px;margin-bottom:20px}
+.cta p{font-size:22px;margin-bottom:30px}
 
-.hero-buttons{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    padding:18px 40px;
-    border-radius:12px;
-    text-decoration:none;
-    color:white;
-    font-size:18px;
-    font-weight:600;
-    transition:0.3s;
-}
-
-.btn-green{
-    background:#25D366;
-}
-
-.btn-green:hover{
-    background:#1ebe5b;
-    transform:translateY(-3px);
-}
-
-.btn-dark{
-    background:#0d1b2a;
-}
-
-.btn-dark:hover{
-    background:#1b263b;
-    transform:translateY(-3px);
-}
-
-/* SECTION */
-
-section{
-    max-width:1300px;
-    margin:auto;
-    padding:100px 20px;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:60px;
-}
-
-.section-title h2{
-    font-size:48px;
-    color:#0d1b2a;
-    margin-bottom:15px;
-}
-
-.section-title p{
-    color:#666;
-    font-size:20px;
-}
-
-/* ABOUT */
-
-.about{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:45px;
-    align-items:center;
-}
-
-.about img{
-    width:100%;
-    border-radius:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.15);
-}
-
-.about-text{
-    background:white;
-    padding:50px;
-    border-radius:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
-
-.about-text h3{
-    font-size:40px;
-    margin-bottom:25px;
-    color:#0d1b2a;
-}
-
-.about-text p{
-    font-size:18px;
-    line-height:1.8;
-    color:#444;
-}
-
-/* SERVICES */
-
-.services-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-}
-
-.service-card{
-    background:white;
-    border-radius:25px;
-    overflow:hidden;
-    transition:0.4s;
-    box-shadow:0 8px 25px rgba(0,0,0,0.08);
-}
-
-.service-card:hover{
-    transform:translateY(-10px);
-}
-
-.service-card img{
-    width:100%;
-    height:260px;
-    object-fit:cover;
-}
-
-.service-content{
-    padding:30px;
-}
-
-.service-content h3{
-    font-size:28px;
-    margin-bottom:15px;
-    color:#0d1b2a;
-}
-
-.service-content p{
-    color:#555;
-    line-height:1.7;
-}
-
-/* ADVANTAGES */
-
-.advantages{
-    background:#0d1b2a;
-    border-radius:30px;
-    padding:70px 40px;
-    color:white;
-}
-
-.advantages-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-}
-
-.adv{
-    text-align:center;
-}
-
-.adv h3{
-    font-size:28px;
-    margin-bottom:15px;
-}
-
-.adv p{
-    color:#d8d8d8;
-    line-height:1.7;
-}
-
-/* CONTACT */
-
-.contact-box{
-    background:white;
-    border-radius:30px;
-    padding:50px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
-
-.contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-}
-
-.contact-info h3{
-    font-size:36px;
-    margin-bottom:30px;
-    color:#0d1b2a;
-}
-
-.contact-info p{
-    font-size:20px;
-    margin-bottom:20px;
-    color:#444;
-}
-
-.contact-info a{
-    color:#25D366;
-    text-decoration:none;
-    font-weight:600;
-}
-
-form{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-}
-
-input,
-textarea{
-    padding:18px;
-    border-radius:12px;
-    border:1px solid #ccc;
-    font-size:16px;
-    font-family:'Montserrat',sans-serif;
-}
-
-button{
-    padding:18px;
-    border:none;
-    border-radius:12px;
-    background:#0d1b2a;
-    color:white;
-    font-size:18px;
-    cursor:pointer;
-    transition:0.3s;
-    font-weight:600;
-}
-
-button:hover{
-    background:#1b263b;
-}
-
-iframe{
-    width:100%;
-    height:350px;
-    border:none;
-    border-radius:20px;
-    margin-top:40px;
-}
-
-/* FOOTER */
-
-footer{
-    background:#08111f;
-    color:white;
-    text-align:center;
-    padding:45px 20px;
-    margin-top:80px;
-}
-
-footer h2{
-    margin-bottom:10px;
-}
-
-footer p{
-    opacity:0.8;
-}
-
-/* WHATSAPP */
+footer{background:#08111f;color:white;text-align:center;padding:45px 20px}
+footer h2{font-size:30px;margin-bottom:10px}
+footer p{opacity:.85;margin:7px 0}
 
 .whatsapp{
-    position:fixed;
-    right:25px;
-    bottom:25px;
-
-    width:72px;
-    height:72px;
-
-    background:#25D366;
-    border-radius:50%;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    color:white;
-    font-size:34px;
-    text-decoration:none;
-
-    box-shadow:0 5px 20px rgba(0,0,0,0.3);
-
-    z-index:999;
-
-    transition:0.3s;
+position:fixed;right:24px;bottom:24px;z-index:2000;
+width:68px;height:68px;border-radius:50%;background:#25d366;color:white;
+display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:900;
+box-shadow:0 10px 30px rgba(0,0,0,.35)
 }
-
-.whatsapp:hover{
-    transform:scale(1.1);
-}
-
-/* ANIMATION */
-
-@keyframes fadeIn{
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-/* MOBILE */
 
 @media(max-width:900px){
-
-    .hero h1{
-        font-size:52px;
-    }
-
-    .hero p{
-        font-size:22px;
-    }
-
-    .about{
-        grid-template-columns:1fr;
-    }
-
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
-
-    .section-title h2{
-        font-size:36px;
-    }
-
+.nav{display:none}
+.hero h1{font-size:42px}
+.hero p{font-size:20px}
+.about,.contact-grid{grid-template-columns:1fr}
+.section-title h2{font-size:32px}
+section{padding:70px 5%}
+.header{padding:16px 5%}
 }
-
 </style>
 </head>
 
 <body>
 
-<header>
+<div class="header">
+<div class="logo">TECHNO <span>PANEL</span></div>
+<div class="nav">
+<a href="#products">Продукция</a>
+<a href="#services">Услуги</a>
+<a href="#about">О нас</a>
+<a href="#contacts">Контакты</a>
+</div>
+</div>
 
-<div class="hero">
-
-<h1>TECHNO PANEL</h1>
-
+<header class="hero">
+<div class="hero-box">
+<div class="badge">Производство • Поставка • Монтаж</div>
+<h1>Сэндвич-панели <span>в Казахстане</span></h1>
 <p>
-Производство, поставка и монтаж сэндвич-панелей и фасадных кассет.<br>
-Строительство складов, ангаров и промышленных объектов под ключ.
+TECHNO PANEL — производство, поставка и монтаж стеновых и кровельных сэндвич-панелей,
+фасадных панелей, фасадных кассет и вентилируемых фасадов.
+Строительство складов, ангаров, СТО, холодильных камер и промышленных зданий под ключ.
 </p>
-
-<div class="hero-buttons">
-
-<a href="https://wa.me/77056512203"
-target="_blank"
-class="btn btn-green">
-
-WhatsApp
-
-</a>
-
-<a href="#contacts"
-class="btn btn-dark">
-
-Получить консультацию
-
-</a>
-
+<div class="buttons">
+<a href="https://wa.me/77056512203?text=Здравствуйте,%20хочу%20получить%20расчет%20по%20сэндвич-панелям" target="_blank" class="btn btn-green">Написать в WhatsApp</a>
+<a href="#contacts" class="btn btn-dark">Получить консультацию</a>
 </div>
-
 </div>
-
 </header>
 
-<section>
-
+<section id="products">
 <div class="section-title">
-
-<h2>О компании</h2>
-
+<h2>Производство и поставка сэндвич-панелей</h2>
 <p>
-Современные решения для промышленного строительства
+TECHNO PANEL поставляет стеновые и кровельные сэндвич-панели для строительства
+складов, ангаров, производственных зданий, СТО, торговых помещений,
+холодильных камер и промышленных объектов в Алматы, Астане и по всему Казахстану.
 </p>
-
+<p>
+Мы работаем с объектами разного масштаба: от небольших коммерческих зданий
+до крупных складских и производственных комплексов.
+</p>
 </div>
 
-<div class="about">
+<div class="grid">
+<div class="card">
+<h3>Стеновые сэндвич-панели</h3>
+<p>Панели для фасадов, стен складов, ангаров, цехов, СТО, торговых и производственных помещений.</p>
+</div>
 
-<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1400&auto=format&fit=crop">
+<div class="card">
+<h3>Кровельные сэндвич-панели</h3>
+<p>Кровельные панели для быстровозводимых зданий, промышленных объектов и складских комплексов.</p>
+</div>
+
+<div class="card">
+<h3>Фасадные панели</h3>
+<p>Современные фасадные решения для коммерческих, административных и промышленных зданий.</p>
+</div>
+
+<div class="card">
+<h3>Фасадные кассеты</h3>
+<p>Металлические фасадные кассеты, вентилируемые фасады и облицовка зданий под современный дизайн.</p>
+</div>
+</div>
+</section>
+
+<section class="dark-section" id="services">
+<div class="section-title">
+<h2>Монтаж сэндвич-панелей и фасадных кассет</h2>
+<p>
+Выполняем профессиональный монтаж сэндвич-панелей, фасадных кассет,
+фасадных панелей и вентилируемых фасадов. Работаем по Алматы, Астане,
+Шымкенту и всем регионам Казахстана.
+</p>
+</div>
+
+<div class="grid">
+<div class="card">
+<h3>Монтаж сэндвич-панелей</h3>
+<p>Монтаж стеновых и кровельных панелей, доборных элементов, герметизация стыков и узлы примыкания.</p>
+</div>
+
+<div class="card">
+<h3>Монтаж фасадных кассет</h3>
+<p>Установка металлических фасадных кассет, облицовка зданий, утепление и устройство вентилируемых фасадов.</p>
+</div>
+
+<div class="card">
+<h3>Строительство ангаров</h3>
+<p>Строительство быстровозводимых ангаров, складов, СТО, цехов и производственных помещений.</p>
+</div>
+
+<div class="card">
+<h3>Холодильные камеры</h3>
+<p>Монтаж теплоизоляционных панелей для холодильных камер, складов хранения и температурных помещений.</p>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="about">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop" alt="Строительство склада и монтаж сэндвич-панелей">
 
 <div class="about-text">
-
-<h3>TECHNO PANEL</h3>
-
+<h2>TECHNO PANEL ТОРГОВЫЙ ДОМ</h2>
 <p>
-ТОО "TECHNO PANEL ТОРГОВЫЙ ДОМ" —
-производство, поставка и профессиональный монтаж
-сэндвич-панелей, фасадных кассет и облицовочных панелей.
+TECHNO PANEL специализируется на производстве, поставке и монтаже
+сэндвич-панелей, фасадных панелей, фасадных кассет и фасадных систем.
 </p>
-
-<br>
-
 <p>
-Мы также выполняем строительство складов,
-ангаров, цехов и промышленных зданий под ключ.
+Мы помогаем заказчикам быстро строить склады, ангары, СТО,
+холодильные камеры, производственные и промышленные здания.
 </p>
-
+<p>
+Главный принцип работы — подобрать материал, организовать поставку,
+выполнить монтаж и довести объект до результата.
+</p>
 </div>
-
 </div>
-
 </section>
 
 <section>
-
 <div class="section-title">
-
-<h2>Наши услуги</h2>
-
+<h2>Для каких объектов подходят наши решения</h2>
 <p>
-Полный комплекс решений для вашего объекта
+Сэндвич-панели и фасадные кассеты применяются там, где важны скорость строительства,
+теплоизоляция, надежность, внешний вид и экономическая эффективность.
 </p>
-
 </div>
 
-<div class="services-grid">
-
-<div class="service-card">
-
-<img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1200&auto=format&fit=crop">
-
-<div class="service-content">
-
-<h3>Сэндвич-панели</h3>
-
-<p>
-Стеновые и кровельные панели
-для складов, заводов и коммерческих объектов.
-</p>
-
+<div class="grid">
+<div class="card"><h3>Склады и логистические комплексы</h3><p>Быстрое строительство складских помещений и распределительных центров.</p></div>
+<div class="card"><h3>Ангары и производственные здания</h3><p>Монтаж ограждающих конструкций, кровли и фасадных систем.</p></div>
+<div class="card"><h3>СТО и коммерческие здания</h3><p>Современный внешний вид, быстрый монтаж и практичная эксплуатация.</p></div>
+<div class="card"><h3>Холодильные камеры</h3><p>Теплоизоляционные панели для объектов хранения и температурных помещений.</p></div>
 </div>
-
-</div>
-
-<div class="service-card">
-
-<img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1200&auto=format&fit=crop">
-
-<div class="service-content">
-
-<h3>Фасадные кассеты</h3>
-
-<p>
-Современные фасадные решения
-для промышленных и административных зданий.
-</p>
-
-</div>
-
-</div>
-
-<div class="service-card">
-
-<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop">
-
-<div class="service-content">
-
-<h3>Монтаж</h3>
-
-<p>
-Профессиональный монтаж
-сэндвич-панелей и фасадных систем.
-</p>
-
-</div>
-
-</div>
-
-<div class="service-card">
-
-<img src="https://images.unsplash.com/photo-1541976590-713941681591?q=80&w=1200&auto=format&fit=crop">
-
-<div class="service-content">
-
-<h3>Строительство под ключ</h3>
-
-<p>
-Склады, ангары и промышленные здания
-с полным циклом работ.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
 </section>
 
-<section>
-
-<div class="advantages">
-
-<div class="section-title">
-
-<h2 style="color:white;">
-Почему выбирают нас
-</h2>
-
-<p style="color:#d5d5d5;">
-Надежность, скорость и качество
-</p>
-
-</div>
-
-<div class="advantages-grid">
-
-<div class="adv">
-
-<h3>Качество</h3>
-
-<p>
-Современные технологии
-и надежные материалы.
-</p>
-
-</div>
-
-<div class="adv">
-
-<h3>Скорость</h3>
-
-<p>
-Оперативное производство,
-доставка и монтаж.
-</p>
-
-</div>
-
-<div class="adv">
-
-<h3>Опыт</h3>
-
-<p>
-Опыт работы
-с промышленными объектами.
-</p>
-
-</div>
-
-<div class="adv">
-
-<h3>Под ключ</h3>
-
-<p>
-Полный цикл строительства —
-от проекта до сдачи объекта.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
+<section class="cta">
+<h2>Нужны сэндвич-панели или монтаж?</h2>
+<p>Отправьте размеры, проект или фото объекта — подготовим предварительный расчёт.</p>
+<a href="https://wa.me/77056512203?text=Здравствуйте,%20хочу%20получить%20расчет%20по%20сэндвич-панелям" target="_blank" class="btn btn-dark">Получить расчёт в WhatsApp</a>
 </section>
 
 <section id="contacts">
-
 <div class="section-title">
-
 <h2>Контакты</h2>
-
-<p>
-Свяжитесь с нами для консультации
-</p>
-
+<p>Свяжитесь с нами для консультации, расчёта стоимости и подбора материалов.</p>
 </div>
 
 <div class="contact-box">
-
 <div class="contact-grid">
-
 <div class="contact-info">
-
-<h3>Контактная информация</h3>
-
-<p>
-📞 <strong>Телефон:</strong><br>
-+7 (705) 651-22-03
-</p>
-
-<p>
-✉ <strong>Email:</strong><br>
-
-<a href="mailto:technopanel.kz01@gmail.com">
-technopanel.kz01@gmail.com
-</a>
-
-</p>
-
-<p>
-💬 <strong>WhatsApp:</strong><br>
-+7 (705) 651-22-03
-</p>
-
-<a href="https://wa.me/77056512203"
-target="_blank"
-class="btn btn-green">
-
-Написать в WhatsApp
-
-</a>
-
+<h3>TECHNO PANEL</h3>
+<p><strong>Телефон / WhatsApp:</strong><br>+7 705 651 22 03</p>
+<p><strong>Email:</strong><br><a href="mailto:technopanel.kz01@gmail.com">technopanel.kz01@gmail.com</a></p>
+<p><strong>Регион работы:</strong><br>Алматы • Астана • Шымкент • Весь Казахстан</p>
+<p><strong>Основные направления:</strong><br>сэндвич-панели, фасадные панели, фасадные кассеты, ангары, склады, СТО, холодильные камеры.</p>
 </div>
 
 <div>
-
-<form>
-
-<input type="text" placeholder="Ваше имя">
-
-<input type="tel" placeholder="Ваш телефон">
-
-<textarea rows="6" placeholder="Опишите ваш проект"></textarea>
-
-<button type="submit">
-
-Отправить заявку
-
-</button>
-
-</form>
-
+<a href="https://wa.me/77056512203?text=Здравствуйте,%20хочу%20получить%20консультацию%20по%20сэндвич-панелям" target="_blank" class="btn btn-green">Написать в WhatsApp</a>
+<br><br>
+<a href="tel:+77056512203" class="btn btn-dark">Позвонить</a>
 </div>
-
 </div>
-
-<iframe
-src="https://maps.google.com/maps?q=Almaty&t=&z=13&ie=UTF8&iwloc=&output=embed">
-</iframe>
-
 </div>
-
 </section>
 
 <footer>
-
 <h2>TECHNO PANEL</h2>
-
-<p>
-© 2026 TECHNO PANEL ТОРГОВЫЙ ДОМ
-</p>
-
+<p>Производство, поставка и монтаж сэндвич-панелей, фасадных панелей и фасадных кассет</p>
+<p>© 2026 TECHNO PANEL ТОРГОВЫЙ ДОМ</p>
 </footer>
 
-<a class="whatsapp"
-href="https://wa.me/77056512203"
-target="_blank">
-
-☎
-
-</a>
+<a class="whatsapp" href="https://wa.me/77056512203" target="_blank">W</a>
 
 </body>
 </html>
