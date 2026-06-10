@@ -4,56 +4,66 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TECHNO PANEL | Сэндвич-панели, фасадные кассеты, поставка и монтаж в Казахстане</title>
+<title>Сэндвич-панели в Казахстане | Производство, поставка и монтаж | TECHNO PANEL</title>
 
 <meta name="google-site-verification" content="FUg9HixWks3t_hyBIzMiRDaviGJqat8A6WxXNV_wfro" />
 
-<meta name="description" content="TECHNO PANEL — поставка и монтаж сэндвич-панелей, фасадных панелей и фасадных кассет в Алматы, Астане и по Казахстану. Стеновые и кровельные панели, ангары, склады, СТО, холодильные камеры и промышленные здания.">
+<meta name="description" content="TECHNO PANEL — производство, поставка и монтаж стеновых и кровельных сэндвич-панелей, фасадных панелей и фасадных кассет в Казахстане. Склады, ангары, СТО, холодильные камеры и промышленные здания под ключ.">
 
-<meta name="keywords" content="сэндвич панели Казахстан, сэндвич панели Алматы, купить сэндвич панели, поставка сэндвич панелей, монтаж сэндвич панелей, фасадные кассеты, фасадные панели, кровельные панели, строительство ангаров, строительство складов, холодильные камеры">
+<meta name="keywords" content="сэндвич панели Казахстан, сэндвич панели Алматы, сэндвич панели Астана, купить сэндвич панели, цена сэндвич панелей, производство сэндвич панелей, поставка сэндвич панелей, монтаж сэндвич панелей, стеновые сэндвич панели, кровельные сэндвич панели, фасадные панели, фасадные кассеты, вентилируемые фасады, строительство складов, строительство ангаров, холодильные камеры, строительство СТО">
 
 <meta name="author" content="TECHNO PANEL">
 
 <style>
+:root{
+--red:#A4001D;
+--red-hover:#C00023;
+--black:#050505;
+--dark:#0B0F19;
+--gray:#F3F4F6;
+--text:#111827;
+--muted:#4B5563;
+}
+
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;background:#f3f4f6;color:#111827}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--gray);color:var(--text)}
 a{text-decoration:none;color:inherit}
 
 .header{
 position:fixed;top:0;left:0;width:100%;z-index:1000;
-background:#080808;padding:18px 7%;
+background:var(--black);padding:18px 7%;
 display:flex;justify-content:space-between;align-items:center;
-border-bottom:3px solid #d90429
+border-bottom:3px solid var(--red)
 }
 .logo{font-size:30px;font-weight:900;color:#fff;letter-spacing:2px}
-.logo span{color:#d90429}
+.logo span{color:var(--red)}
 .nav a{color:#fff;margin-left:24px;font-weight:800}
-.nav a:hover{color:#d90429}
+.nav a:hover{color:var(--red)}
 
 .hero{
 min-height:100vh;
 background:
-linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.58),rgba(217,4,41,.35)),
-url("https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1800&auto=format&fit=crop") center/cover no-repeat;
+linear-gradient(90deg,rgba(0,0,0,.90),rgba(0,0,0,.60),rgba(164,0,29,.35)),
+url("techno-bg.jpeg") center/cover no-repeat;
 display:flex;align-items:center;padding:130px 7% 70px;
 }
-.hero-content{max-width:920px}
+.hero-content{max-width:950px}
 .badge{
-display:inline-block;background:#d90429;color:white;
+display:inline-block;background:var(--red);color:white;
 padding:12px 22px;border-radius:4px;font-weight:900;margin-bottom:26px;
 text-transform:uppercase;letter-spacing:1px
 }
-.hero h1{font-size:68px;line-height:1.05;color:white;text-transform:uppercase;margin-bottom:25px}
-.hero h1 span{color:#d90429}
+.hero h1{font-size:66px;line-height:1.05;color:white;text-transform:uppercase;margin-bottom:25px}
+.hero h1 span{color:var(--red)}
 .hero p{font-size:24px;line-height:1.55;color:#f3f4f6;margin-bottom:35px}
 .buttons{display:flex;gap:18px;flex-wrap:wrap}
 .btn{
 display:inline-block;padding:18px 34px;border-radius:4px;
 font-weight:900;font-size:18px;transition:.3s
 }
-.btn-red{background:#d90429;color:white}
-.btn-red:hover{background:#ef233c;transform:translateY(-3px)}
+.btn-red{background:var(--red);color:white}
+.btn-red:hover{background:var(--red-hover);transform:translateY(-3px)}
 .btn-dark{background:#111827;color:white;border:1px solid #374151}
 .btn-dark:hover{background:#1f2937;transform:translateY(-3px)}
 .btn-green{background:#25d366;color:white}
@@ -62,22 +72,22 @@ font-weight:900;font-size:18px;transition:.3s
 .section{padding:90px 7%;max-width:1350px;margin:auto}
 .section-title{text-align:center;margin-bottom:55px}
 .section-title h2{font-size:42px;color:#111827;margin-bottom:18px}
-.section-title p{font-size:19px;color:#4b5563;line-height:1.7;max-width:1050px;margin:0 auto 14px}
+.section-title p{font-size:19px;color:var(--muted);line-height:1.7;max-width:1080px;margin:0 auto 14px}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
 .card{
-background:white;border-left:6px solid #d90429;
+background:white;border-left:6px solid var(--red);
 border-radius:8px;padding:30px;box-shadow:0 12px 35px rgba(0,0,0,.08)
 }
 .card h3{font-size:24px;color:#111827;margin-bottom:15px}
-.card p{font-size:17px;color:#4b5563;line-height:1.7}
+.card p{font-size:17px;color:var(--muted);line-height:1.7}
 
 .dark{
-background:#080808;max-width:none;color:white
+background:var(--black);max-width:none;color:white
 }
 .dark .section-title h2{color:white}
 .dark .section-title p{color:#d1d5db}
-.dark .card{background:#111827;border-left:6px solid #d90429}
+.dark .card{background:#111827;border-left:6px solid var(--red)}
 .dark .card h3{color:#fff}
 .dark .card p{color:#d1d5db}
 
@@ -91,14 +101,14 @@ width:100%;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.25)
 background:white;border-radius:10px;padding:42px;box-shadow:0 12px 35px rgba(0,0,0,.08)
 }
 .text-box h2{font-size:38px;margin-bottom:22px;color:#111827}
-.text-box p{font-size:18px;line-height:1.8;color:#4b5563;margin-bottom:15px}
+.text-box p{font-size:18px;line-height:1.8;color:var(--muted);margin-bottom:15px}
 
 .red-line{
-height:8px;background:linear-gradient(90deg,#d90429,#ef233c,#111827)
+height:8px;background:linear-gradient(90deg,var(--red),var(--red-hover),#111827)
 }
 
 .cta{
-max-width:none;text-align:center;background:#d90429;color:white;padding:85px 7%
+max-width:none;text-align:center;background:linear-gradient(90deg,var(--red),#111827);color:white;padding:85px 7%
 }
 .cta h2{font-size:44px;margin-bottom:20px}
 .cta p{font-size:22px;margin-bottom:30px}
@@ -111,9 +121,20 @@ display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center
 }
 .contact-info h3{font-size:34px;margin-bottom:25px;color:#111827}
 .contact-info p{font-size:20px;margin-bottom:18px;color:#374151}
-.contact-info a{color:#d90429;font-weight:900}
+.contact-info a{color:var(--red);font-weight:900}
 
-footer{background:#080808;color:white;text-align:center;padding:45px 20px}
+.city-line{
+text-align:center;
+font-size:18px;
+line-height:1.8;
+color:#374151;
+background:#fff;
+padding:35px 7%;
+border-top:1px solid #e5e7eb;
+border-bottom:1px solid #e5e7eb;
+}
+
+footer{background:var(--black);color:white;text-align:center;padding:45px 20px}
 footer h2{font-size:30px;margin-bottom:10px}
 footer p{opacity:.85;margin:7px 0}
 
@@ -144,6 +165,7 @@ box-shadow:0 10px 30px rgba(0,0,0,.35)
 <div class="nav">
 <a href="#products">Продукция</a>
 <a href="#services">Услуги</a>
+<a href="#seo">SEO</a>
 <a href="#objects">Объекты</a>
 <a href="#contacts">Контакты</a>
 </div>
@@ -154,9 +176,9 @@ box-shadow:0 10px 30px rgba(0,0,0,.35)
 <div class="badge">Сэндвич-панели • Фасадные кассеты • Монтаж</div>
 <h1>Сэндвич-панели <span>для промышленных зданий</span></h1>
 <p>
-TECHNO PANEL — поставка и монтаж стеновых и кровельных сэндвич-панелей,
+TECHNO PANEL — производство, поставка и монтаж стеновых и кровельных сэндвич-панелей,
 фасадных панелей, фасадных кассет и вентилируемых фасадов.
-Работаем по Алматы, Астане и всему Казахстану.
+Работаем по Алматы, Астане, Шымкенту и всему Казахстану.
 </p>
 <div class="buttons">
 <a class="btn btn-green" target="_blank" href="https://wa.me/77056512203?text=Здравствуйте,%20хочу%20получить%20расчет%20по%20сэндвич-панелям">WhatsApp</a>
@@ -175,8 +197,8 @@ TECHNO PANEL — поставка и монтаж стеновых и крове
 ангаров, СТО, холодильных камер, торговых помещений, производственных и промышленных зданий.
 </p>
 <p>
-Основное направление TECHNO PANEL — сэндвич-панели, фасадные панели,
-фасадные кассеты и современные ограждающие конструкции для быстровозводимых зданий.
+Основное направление TECHNO PANEL — производство, поставка и монтаж сэндвич-панелей,
+фасадных панелей, фасадных кассет и современных ограждающих конструкций.
 </p>
 </div>
 
@@ -193,12 +215,12 @@ TECHNO PANEL — поставка и монтаж стеновых и крове
 
 <div class="card">
 <h3>Фасадные панели</h3>
-<p>Современная облицовка зданий: металлические панели, яркие фасады, комбинированные цвета и аккуратный внешний вид.</p>
+<p>Современная облицовка зданий: металлические панели, комбинированные цвета и аккуратный внешний вид.</p>
 </div>
 
 <div class="card">
 <h3>Фасадные кассеты</h3>
-<p>Металлические фасадные кассеты для вентилируемых фасадов, административных, коммерческих и промышленных объектов.</p>
+<p>Металлические фасадные кассеты для вентилируемых фасадов, коммерческих и промышленных объектов.</p>
 </div>
 </div>
 </section>
@@ -207,8 +229,8 @@ TECHNO PANEL — поставка и монтаж стеновых и крове
 <div class="section-title">
 <h2>Поставка и монтаж под ключ</h2>
 <p>
-TECHNO PANEL помогает заказчику закрыть весь цикл: подобрать панели,
-организовать поставку, выполнить монтаж и сдать объект в работу.
+TECHNO PANEL помогает закрыть весь цикл: подобрать панели, организовать поставку,
+выполнить монтаж и подготовить объект к эксплуатации.
 </p>
 </div>
 
@@ -235,6 +257,26 @@ TECHNO PANEL помогает заказчику закрыть весь цик�
 </div>
 </section>
 
+<section id="seo" class="section">
+<div class="section-title">
+<h2>Производство, поставка и монтаж сэндвич-панелей</h2>
+<p>
+TECHNO PANEL занимается производством, поставкой и монтажом сэндвич-панелей по всему Казахстану.
+Мы поставляем стеновые и кровельные сэндвич-панели для строительства складов, ангаров,
+производственных помещений, холодильных камер, торговых объектов, СТО и промышленных зданий.
+</p>
+<p>
+Также выполняем монтаж фасадных панелей, фасадных кассет и вентилируемых фасадов.
+Работаем в Алматы, Астане, Шымкенте, Караганде, Атырау, Актау, Актобе,
+Павлодаре, Семее, Усть-Каменогорске, Костанае, Таразе, Туркестане и других городах Казахстана.
+</p>
+<p>
+Если вам нужно купить сэндвич-панели, узнать цену сэндвич-панелей или заказать монтаж,
+свяжитесь с TECHNO PANEL для получения расчёта стоимости и коммерческого предложения.
+</p>
+</div>
+</section>
+
 <section id="objects" class="section">
 <div class="split">
 <div class="text-box">
@@ -249,12 +291,12 @@ TECHNO PANEL помогает заказчику закрыть весь цик�
 и промышленных зданий.
 </p>
 <p>
-Фасадные кассеты и фасадные панели позволяют сделать объект визуально
-дороже, современнее и привлекательнее для клиентов и арендаторов.
+Фасадные кассеты и фасадные панели делают объект визуально дороже,
+современнее и привлекательнее для клиентов, арендаторов и партнёров.
 </p>
 </div>
 
-<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1400&auto=format&fit=crop" alt="Современное здание с фасадными панелями">
+<img src="techno-bg.jpeg" alt="Производство сэндвич-панелей TECHNO PANEL">
 </div>
 </section>
 
@@ -280,6 +322,10 @@ TECHNO PANEL помогает заказчику закрыть весь цик�
 <p>Отправьте проект, размеры или фото объекта — подготовим предварительный расчёт.</p>
 <a class="btn btn-dark" target="_blank" href="https://wa.me/77056512203?text=Здравствуйте,%20хочу%20получить%20расчет%20по%20сэндвич-панелям">Получить расчёт в WhatsApp</a>
 </section>
+
+<div class="city-line">
+Алматы • Астана • Шымкент • Караганда • Атырау • Актау • Актобе • Павлодар • Семей • Усть-Каменогорск • Костанай • Петропавловск • Тараз • Туркестан • Весь Казахстан
+</div>
 
 <section id="contacts" class="section">
 <div class="section-title">
@@ -308,7 +354,7 @@ TECHNO PANEL помогает заказчику закрыть весь цик�
 
 <footer>
 <h2>TECHNO PANEL</h2>
-<p>Сэндвич-панели, фасадные панели, фасадные кассеты, поставка и монтаж</p>
+<p>Сэндвич-панели, фасадные панели, фасадные кассеты, производство, поставка и монтаж</p>
 <p>Алматы • Астана • Шымкент • Казахстан</p>
 <p>© 2026 TECHNO PANEL</p>
 </footer>
